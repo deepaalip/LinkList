@@ -76,7 +76,31 @@ package com.bridgelabz;
 		                tempNode = tempNode.next;          
         } 
 	
-}	               
+}	   
+	
+	 public <T> void deletebydata(T data) {
+		 Node tempNode = head;
+		  Node previousNode = head;
+		  while(tempNode.next != null) { 
+	          if(tempNode.data == data) {
+	               previousNode.next=tempNode.next;
+	               size();
+	          }
+	           previousNode = tempNode;
+	           tempNode = tempNode.next;  
+		   }   
+	 }
+	  public <T> void size() {
+		  Node tempNode = head;
+			int count = 0;
+			while(tempNode != null) {             
+				count++;
+				tempNode = tempNode.next;
+			}
+			System.out.println("Size of the Linked List :- " + count);
+		
+		
+	  }
       
 	public void printAll() {
 	    	Node currentNode = head;

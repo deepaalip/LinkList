@@ -14,7 +14,7 @@ public class MyLinklistMain {
 		linklist.insert(56,30);
 		
 		linklist.insertelement(30,40);
-		
+		linklist.deletebydata(40);
 		linklist.printAll(); 
 		
    }
