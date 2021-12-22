@@ -13,8 +13,10 @@ public class MyLinklistMain {
 		linklist.append(70);
 		linklist.insert(56,30);
 		
+		linklist.insertelement(30,40);
+		
 		linklist.printAll(); 
-		linklist.search_element(30);
+		
    }
 }
 

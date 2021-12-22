@@ -66,6 +66,17 @@ package com.bridgelabz;
 			tempNode = tempNode.next;
 		}
 	}
+	
+	public <T> void insertelement( T previous_data,T insertdata ) {
+	     Node tempNode = head;
+	        while(tempNode.next != null) { 
+	          if(tempNode.data == previous_data) {
+		            insert(previous_data,insertdata);
+	          }	  
+		                tempNode = tempNode.next;          
+        } 
+	
+}	               
       
 	public void printAll() {
 	    	Node currentNode = head;
