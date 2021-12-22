@@ -1,14 +1,28 @@
 package com.bridgelabz;
 
 public  class MyLinklist<T> extends Node <T>{
-	Node head = null;
-	
-	MyLinklist(T data, Node Next) {
+	 
+	    Node head = null;
+		MyLinklist(T data, Node Next) {
 		super(data, Next);
 		// TODO Auto-generated constructor stub
 	}
+
+
 	
-	 public void printAll() {
+
+	
+	
+	
+	public <T>void add(T data) {
+		Node node = new Node(data,null);          
+		node.setdata(data);                       
+		node.setNext(head);           
+		head = node;  
+	
+}
+      
+      public void printAll() {
 	    	Node currentNode = head;
 	    	System.out.println("linklist:" );
 	    	
@@ -19,6 +33,6 @@ public  class MyLinklist<T> extends Node <T>{
 	    	System.out.println(currentNode.data);
 	    		}
 	    	
-    }
+}
 
 
