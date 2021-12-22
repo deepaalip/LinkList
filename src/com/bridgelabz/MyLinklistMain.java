@@ -12,7 +12,8 @@ public class MyLinklistMain {
 		linklist.add(56); 
 		linklist.append(70);
 		linklist.insert(56,30);
-		linklist.popfirst();
+		
+		linklist.poplast();
 	    linklist.printAll(); 
    }
 }

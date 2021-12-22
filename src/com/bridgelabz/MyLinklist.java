@@ -38,9 +38,20 @@ public  class MyLinklist<T> extends Node <T>{
 		Node tempNode = head;
 		head = head.getNext();
 		return tempNode;
-	}
+}
+	public <T> void poplast() {
+		Node tempNode = head;
+    	Node previousToLast = null;  
+    	
+    	while(tempNode.next != null) {
+    		previousToLast = tempNode;
+    		tempNode=tempNode.next;
+    }
+    	
+    	previousToLast.next=null;
+} 
       
-      public void printAll() {
+	public void printAll() {
 	    	Node currentNode = head;
 	    	System.out.println("linklist:" );
 	    	
