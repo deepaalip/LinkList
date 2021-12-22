@@ -7,14 +7,15 @@ public class MyLinklistMain {
 	   System.out.println("-----------WELCOME TO LINKED LIST-------------");
 		
 		
+		MyLinklist<T>  linklist = new MyLinklist(args, null);
 		
-		 MyLinklist<T>  linklist = new MyLinklist(args, null);
-		linklist.add(70);
-		linklist.add(30);							
-		linklist.add(56);
+		linklist.add(56); 
+		linklist.append(30);
+		linklist.append(70);							
+		
 		
 		linklist.printAll(); 
    }
-   }
+}
 
 

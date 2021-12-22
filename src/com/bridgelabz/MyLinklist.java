@@ -8,18 +8,22 @@ public  class MyLinklist<T> extends Node <T>{
 		// TODO Auto-generated constructor stub
 	}
 
-
-	
-
-	
-	
-	
-	public <T>void add(T data) {
+   public <T>void add(T data) {
 		Node node = new Node(data,null);          
 		node.setdata(data);                       
 		node.setNext(head);           
 		head = node;  
 	
+}
+	public <T> void append(T data) {
+		Node tempNode = head; 
+		
+		while(tempNode.next != null) {       
+			tempNode = tempNode.next;
+		}
+		Node node = new Node(data,null);              
+																		
+		tempNode.next = node;	
 }
       
       public void printAll() {
