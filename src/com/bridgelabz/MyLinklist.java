@@ -25,6 +25,15 @@ public  class MyLinklist<T> extends Node <T>{
 																		
 		tempNode.next = node;	
 }
+	public <T> void insert( T previous_data,T data ) {
+	Node tempNode = head;
+	while(tempNode.data != previous_data) {
+		tempNode = tempNode.next;          
+	}                                           
+	Node node = new Node(data,null);
+	node.next = tempNode.next;
+	tempNode.next = node;
+}
       
       public void printAll() {
 	    	Node currentNode = head;

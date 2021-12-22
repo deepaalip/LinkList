@@ -10,11 +10,10 @@ public class MyLinklistMain {
 		MyLinklist<T>  linklist = new MyLinklist(args, null);
 		
 		linklist.add(56); 
-		linklist.append(30);
-		linklist.append(70);							
+		linklist.append(70);
+		linklist.insert(56,30);
 		
-		
-		linklist.printAll(); 
+	    linklist.printAll(); 
    }
 }
 
