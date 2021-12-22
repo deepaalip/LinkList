@@ -7,16 +7,18 @@ public class MyLinklistMain {
 	   System.out.println("-----------WELCOME TO LINKED LIST-------------");
 		
 		
-		MyLinklist<T>  linklist = new MyLinklist(args, null);
+	   SortedOrderedlinklist sortedLinkedList = new SortedOrderedlinklist();
+
+		sortedLinkedList.addNode(56);    
+		sortedLinkedList.addNode(30);
+		sortedLinkedList.addNode(40);
+		sortedLinkedList.addNode(70);
+
+		System.out.println("Linked List before sorting :-");
+		sortedLinkedList.display();
 		
-		linklist.add(56); 
-		linklist.append(70);
-		linklist.insert(56,30);
-		
-		linklist.insertelement(30,40);
-		linklist.deletebydata(40);
-		linklist.printAll(); 
-		
+		System.out.println("Linked List after sorting :-");
+		sortedLinkedList.sort();
    }
 }
 
