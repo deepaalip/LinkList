@@ -1,6 +1,6 @@
 package com.bridgelabz;
 
-public class Node <T> implements Mynode<T>{
+public class Node <T> {
       public T data;
      public  Node next;
 	
@@ -15,11 +15,11 @@ public class Node <T> implements Mynode<T>{
     public void setdata(T data){
       this.data = data;
     }
-    public Mynode<T> getNext(){
+    public Node<T> getNext(){
     	return next;
     }
     
-    public void setNext(Mynode next) {
+    public void setNext(Node next) {
     	this.next = (Node<T>) next;
     }
 }

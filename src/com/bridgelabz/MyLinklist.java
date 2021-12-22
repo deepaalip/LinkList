@@ -34,12 +34,17 @@ public  class MyLinklist<T> extends Node <T>{
 	node.next = tempNode.next;
 	tempNode.next = node;
 }
+	public <T> Node popfirst() {
+		Node tempNode = head;
+		head = head.getNext();
+		return tempNode;
+	}
       
       public void printAll() {
 	    	Node currentNode = head;
 	    	System.out.println("linklist:" );
 	    	
-	    	while(currentNode.getNext() != null) {
+	    	while(currentNode.next != null) {
 	    		System.out.println(currentNode.data+"->");
 	    		currentNode=currentNode.next;
 	    	}
